@@ -1,1 +1,1 @@
-web: node gallery.js
+web: node gallery-server.js
