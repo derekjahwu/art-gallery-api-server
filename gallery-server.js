@@ -27,7 +27,7 @@ app.post('/painting', (req, res) => {
     gallery.push(newPainting)
 
     console.log(`Painting added to Gallery`);
-    res.redirect("http://localhost:5500/paintings-list.html")
+    res.redirect("https://radiant-halva-2cca42.netlify.app/paintings-list.html")
 })
 
 app.get('/gallery/:idNum', (req,res) => {
@@ -49,7 +49,7 @@ app.delete('/gallery/:idNum', (req,res) => {
         return false;
     });
 
-    res.send('http://localhost:5500/paintings-list.html')
+    res.send('https://radiant-halva-2cca42.netlify.app/paintings-list.html')
 });
 
 app.post('/gallery/:idNum', (req,res) => {
@@ -63,7 +63,7 @@ app.post('/gallery/:idNum', (req,res) => {
         }
     }
 
-    res.redirect('http://localhost:5500/paintings-list.html')
+    res.redirect('https://radiant-halva-2cca42.netlify.app/paintings-list.html')
 })
 
 app.get('/gallery', (req,res) => {
