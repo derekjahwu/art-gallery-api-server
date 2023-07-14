@@ -3,7 +3,36 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 
-let gallery = [];
+let gallery = [
+    {
+        "title":"The Bookworm",
+        "artist":"Carl Spitzweg",
+        "date":"1850",
+        "link":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Carl_Spitzweg_021.jpg/800px-Carl_Spitzweg_021.jpg",
+        "idNum":"1689305359090"
+    },
+    {
+        "title":"Music-making Hermit before his Rocky Abode"
+        ,"artist":"Carl Spitzweg"
+        ,"date":"1856–1858"
+        ,"link":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Musizierender_Einsiedler_vor_seiner_Felsenklause_%28Carl_Spitzweg%29.jpg/1280px-Musizierender_Einsiedler_vor_seiner_Felsenklause_%28Carl_Spitzweg%29.jpg"
+        ,"idNum":"1689305402117"
+    },
+    {
+        "title":"Gnome Watching Railway Train"
+        ,"artist":"Carl Spitzweg"
+        ,"date":"1848",
+        "link":"https://upload.wikimedia.org/wikipedia/commons/b/b3/CarlSpitzwegGnomEisenbahnbetrachtend.jpg"
+        ,"idNum":"1689305664217"
+    },
+    {
+        "title":"The Serenade",
+        "artist":"Carl Spitzweg",
+        "date":"1854",
+        "link":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Carl_Spitzweg_011.jpg/800px-Carl_Spitzweg_011.jpg",
+        "idNum":"1689305708823"
+    }
+];
 
 class Painting {
     constructor(title, artist, date, link, idNum) {
